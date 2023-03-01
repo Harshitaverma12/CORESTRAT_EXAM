@@ -84,7 +84,6 @@
       padding-right: 0px;
     "
   >
-    <a class="navbar-brand" href="#">Navbar</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -103,19 +102,106 @@
       id="navbarColor03"
       [ngbCollapse]="isCollapsed"
     >
+      <div class="logo py-4">
+        <img src="./assets/logo1.png" alt="Company Logo" />
+      </div>
       <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" target="_blank">Home</a>
+          <mat-icon>home</mat-icon>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/student" target="_blank">Student</a>
+        </li>
+
         <li class="nav-item active">
           <a class="nav-link" routerLink="/admin" target="_blank">Admin </a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" routerLink="/help" target="_blank">Help</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" target="_blank">Home</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact" target="_blank">Contact</a>
         </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/result"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Result</a
+          >
+        </li>
+
+        <!-- <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/instructions"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Instruction</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/examination"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Exam</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/result"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Result</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/papers"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Papers</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/performance"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Performance</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/admin-setting"
+            target="_blank"
+            style="margin-left: -4rem"
+            >ad-setting</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/side-nav"
+            target="_blank"
+            style="margin-left: -4rem"
+            >sidenav</a
+          >
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -128,5 +214,12 @@
     <li><a routerLink="/home" target="_blank">Home</a></li>
     <li><a routerLink="/contact" target="_blank">Contact</a></li>
   </ul>
-</span> -->
+</span> --->
 <router-outlet></router-outlet>
+
+<!-- <mat-sidenav-content>
+  <app-header></app-header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</mat-sidenav-content> -->

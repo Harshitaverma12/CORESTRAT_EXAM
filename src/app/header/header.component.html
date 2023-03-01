@@ -1,0 +1,171 @@
+<!-- <div>
+  <nav
+    class="navbar navbar-expand-sm navbar-light bg-light"
+    style="
+      padding-left: 1rem;
+      padding-top: 0rem;
+      padding-bottom: 0px;
+      padding-right: 0px;
+    "
+  >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor03"
+      aria-controls="navbarColor03"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      id="navbarColor03"
+      [ngbCollapse]="isCollapsed"
+    >
+      <div class="logo py-4">
+        <img src="./assets/logo1.png" alt="Company Logo" />
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/admin" target="_blank">Admin </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/help"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Help</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/student"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Student</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Contact</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/home"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/instructions"
+            target="_blank"
+            style="margin-left: -5rem"
+            >Instruction</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/examination"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Exam</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/result"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Result</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/papers"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Papers</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/performance"
+            target="_blank"
+            style="margin-left: -4rem"
+            >Performance</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/admin-setting"
+            target="_blank"
+            style="margin-left: -4rem"
+            >ad-setting</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/side-nav"
+            target="_blank"
+            style="margin-left: -4rem"
+            >sidenav</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<span>
+    <ul>
+      <li><a routerLink="/admin" target="_blank">Admin</a></li>
+      <li><a routerLink="/help" target="_blank">Help</a></li>
+      <li><a routerLink="/home" target="_blank">Home</a></li>
+      <li><a routerLink="/contact" target="_blank">Contact</a></li>
+    </ul>
+  </span> 
+<router-outlet></router-outlet> -->
+
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a routerLink="/home">Owner-Account</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a routerLink="/owner">Owner Actions</a>
+      </li>
+      <li>
+        <a routerLink="/account">Account Actions</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>

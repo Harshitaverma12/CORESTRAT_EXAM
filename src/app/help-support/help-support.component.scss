@@ -9,6 +9,10 @@
     margin-top: 2rem;
 }
 
+.body-help{
+    height: 35rem;
+}
+
 .block{
     margin-top: 4rem;
 }
@@ -65,11 +69,19 @@
         font-weight: 700;
         color: #1e293b;
         display: flex;
+        margin-bottom: -5rem;
     }
 
     .block{
         display: flex;
         flex-direction: column;
+    }
+
+    .body-help{
+        overflow: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 33rem;
     }
 
     .box{

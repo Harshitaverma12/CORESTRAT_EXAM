@@ -13,6 +13,7 @@
 .form{
     width: 55%;
 }
+
 .welcome_text {
     font-family: 'Open Sans';
     font-style: normal;
@@ -47,6 +48,14 @@
         width: 40rem;
 }
 
+.input-box-msg{
+    background: #e6e6e6;
+        border: none;
+        height: 6vh;
+        border-radius: 12px;
+        width: 40rem;
+}
+
 .content{
     margin-left: 4rem;
 }
@@ -64,6 +73,7 @@
         flex-direction: column;
         justify-content: center;
         overflow-y: scroll;
+        margin-top: 1rem;
     }
 
     .content{
@@ -72,7 +82,7 @@
     }
 
     .form{
-        margin-top: 4rem;
+        margin-top: 1rem;
         margin-left: 3rem;
         margin-right: 6rem;
         width: 20%;
@@ -86,6 +96,27 @@
     .getStarted{
         margin-top: 3rem;
         margin-left: 5rem;
+    }
+
+    .Corestrat_text{
+        font-size: 2rem !important;
+        font-weight: bold;
+    }
+
+    .input-box{
+        background: #e6e6e6;
+    border: none;
+    height: 4vh !important;
+    border-radius: 12px;
+    width: 20rem !important;
+    }
+
+    .input-box-msg{
+        background: #e6e6e6;
+    border: none;
+    height: 5vh !important;
+    border-radius: 12px;
+    width: 20rem !important;
     }
 }
 

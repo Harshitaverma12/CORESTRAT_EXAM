@@ -1,0 +1,74 @@
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="./assets/Logo.png" alt="Company Logo" />
+  </div>
+  <mat-divider></mat-divider>
+  <h3 matSubheader class="mt-2">
+    <a style="font-weight: 700" href="https://corestrat.ai/" target="_blank"
+      >CORESTRAT</a
+    >
+  </h3>
+  <div *ngIf="!isAdmin">
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/dashboard"
+    >
+      <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+      <mat-icon>description</mat-icon> Instructions
+    </a>
+
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/examination"
+    >
+      <mat-icon>book</mat-icon> Test</a
+    >
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/results">
+      <mat-icon>assignment</mat-icon> Results
+    </a>
+    <!-- <a mat-list-item> <mat-icon>help</mat-icon> Help</a> -->
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/settings">
+      <mat-icon>settings</mat-icon> Settings</a
+    >
+    <a mat-list-item (click)="logout()"> <mat-icon>logout</mat-icon>Logout </a>
+  </div>
+  <div *ngIf="isAdmin">
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/admin-dashboard"
+    >
+      <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/papers">
+      <mat-icon>book</mat-icon> Papers
+    </a>
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/student-list"
+    >
+      <mat-icon>assignment</mat-icon> Performance
+    </a>
+    <!-- <a mat-list-item> <mat-icon>help</mat-icon> Help</a> -->
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/admin-settings"
+    >
+      <mat-icon>settings</mat-icon> Settings
+    </a>
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/invite-mail"
+    >
+      <mat-icon>mail</mat-icon> Invite Mail
+    </a>
+    <a mat-list-item (click)="logout()"> <mat-icon>logout</mat-icon>Logout </a>
+  </div>
+</mat-nav-list>

@@ -1,0 +1,138 @@
+.block{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.welcome_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #545050;
+}
+
+.Corestrat_text {
+    font-size: 3.5rem !important;
+    color: #1E293B;
+    font-weight: bolder;
+}
+
+.getStarted {
+    margin: 10%;
+    background: #1E293B;
+    border-radius: 10px;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.content{
+    font-size: 1.0rem;
+}
+
+.exam_img {
+    float: right;
+    width: 50rem;
+    height: 40rem;
+}
+
+.text_top {
+    margin-top: 7rem;
+    width: 30rem;
+    margin-right: 2rem;
+}
+
+@media (min-width: 0px) and (max-width: 480px){
+    .text_top {
+        margin-top: 7rem;
+    }
+
+    .welcome_text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #545050;
+    }
+    
+    .Corestrat_text {
+        font-size: 2.0rem !important;
+        color: #1E293B;
+        font-weight: bolder;
+    }
+
+    .content{
+        font-size: 1.0rem;
+    }
+    .content{
+        font-size: 0.7rem;
+    }
+        
+
+    .exam_img{
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .text_top {
+        margin-top: 6rem;
+        width: 50rem;
+        margin-left: 0rem;
+    }
+
+    .welcome_text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #545050;
+    }
+    
+    .Corestrat_text {
+        font-size: 3.5rem !important;
+        color: #1E293B;
+        font-weight: bolder;
+    }
+
+    .exam_img{
+        display: none;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px){
+    .text_top {
+        margin-top: 10rem;
+        margin-left: 25rem;
+    }
+
+    .welcome_text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #545050;
+    }
+    
+    .Corestrat_text {
+        font-size: 3.5rem !important;
+        color: #1E293B;
+        font-weight: bolder;
+    }
+
+    .content{
+        font-size: 1.0rem;
+    }
+
+    .image{
+        margin-top: 5rem;
+        width: -25rem;
+    }
+}

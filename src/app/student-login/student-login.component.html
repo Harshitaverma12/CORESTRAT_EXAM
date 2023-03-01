@@ -1,0 +1,172 @@
+<!-- <div class="w-100 block">
+  <div class="box">
+    <div class="w-50">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center">Login</h5>
+        <div class="input">
+          <label for="name">Name: </label>
+          <input
+            class="input-box m-2"
+            id="name"
+            type="text"
+            formControlName="name"
+          />
+        </div>
+        <div class="m-2">
+          <label for="password">Password: </label>
+          <input
+            class="input-box m-2"
+            id="password"
+            type="text"
+            formControlName="password"
+          />
+          <div style="text-align: center !important">
+            <button class="login-button" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-50 image-stu">
+      <img class="student-img d-none d-lg-block" src="../../assets/Saly.png" />
+    </div>
+  </div>
+</div> -->
+
+<head>
+  <link
+    href="http://fonts.googleapis.com/css?family=Roboto"
+    rel="stylesheet"
+    type="text/css"
+  />
+</head>
+<div>
+  <div class="row login-box mx-auto d-flex">
+    <div *ngIf="isLogin" id="login_form">
+      <div class="title m-4">Login</div>
+      <div class="m-4">
+        <div class="content">If you haven't registered yet</div>
+        <div class="register" style="color: #0c21c1" (click)="register()">
+          Register Here!
+        </div>
+      </div>
+      <form [formGroup]="studentLogin" (ngSubmit)="onSubmitLogin()">
+        <div style="text-align: left; margin: 10%">
+          <div class="m-2">
+            <label for="name">Name: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="name"
+              type="text"
+              formControlName="name"
+            />
+          </div>
+          <div class="m-2">
+            <label for="password">Password: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="password"
+              type="password"
+              formControlName="password"
+            />
+          </div>
+          <div style="text-align: center !important">
+            <button
+              class="login-button"
+              type="submit"
+              [disabled]="!studentLogin.valid"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="login_image">
+      <img class="mt-4 pt-4 student-img" src="../../assets/Saly.png" />
+    </div>
+    <div *ngIf="!isLogin" class="register">
+      <div class="title m-4">Register</div>
+      <div class="m-4">
+        <div style="text-align: left">If you are registered</div>
+        <div
+          style="
+            text-align: left;
+            color: #0c21c1;
+            cursor: pointer;
+            font-weight: 700;
+          "
+          (click)="register()"
+        >
+          Login Here!
+        </div>
+      </div>
+      <form [formGroup]="studentRegistered" (ngSubmit)="onSubmitRegistration()">
+        <div style="text-align: left; margin: 10%">
+          <div class="m-2">
+            <label for="name">Name: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="name"
+              type="text"
+              formControlName="name"
+            />
+          </div>
+          <div class="m-2">
+            <label for="name">Email: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="name"
+              type="text"
+              formControlName="email"
+            />
+          </div>
+          <div class="m-2">
+            <label for="password">Password: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="password"
+              type="text"
+              formControlName="password"
+            />
+          </div>
+          <div class="m-2">
+            <label for="password">Confirm Password: </label>
+          </div>
+          <div class="m-2">
+            <input
+              class="input-box"
+              id="password"
+              type="text"
+              formControlName="confirm_password"
+            />
+          </div>
+          <div style="text-align: center !important">
+            <button
+              class="login-button"
+              type="submit"
+              [disabled]="!studentRegistered.valid"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- <div id="login_image" style="background: #2c3344 !important">
+      <img
+        class="mt-4 pt-4 student-img d-none d-lg-block"
+        src="../../assets/Saly.png"
+      />
+    </div> -->
+  </div>
+</div>
