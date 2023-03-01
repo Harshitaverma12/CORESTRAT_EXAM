@@ -14,6 +14,7 @@ import { PapersComponent } from './papers/papers.component'
 import { AdminSettingComponent } from './admin-setting/admin-setting.component'
 import { SidenavComponent } from './sidenav/sidenav.component'
 import { InviteMailComponent } from './invite-mail/invite-mail.component'
+import { StudentSettingComponent } from './student-setting/student-setting.component'
 import { HeaderComponent } from './header/header.component'
 
 const routes: Routes = [
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path: 'admin-setting', component: AdminSettingComponent },
   { path: 'side-nav', component: SidenavComponent },
   { path: 'invite-mail', component: InviteMailComponent },
+  { path: 'student-setting', component: StudentSettingComponent },
+  
 ];
 
 @NgModule({

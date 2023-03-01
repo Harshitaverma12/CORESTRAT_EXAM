@@ -27,7 +27,8 @@ import { PerformanceComponent } from './performance/performance.component';
 import { AdminSettingComponent } from './admin-setting/admin-setting.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
-import { InviteMailComponent } from './invite-mail/invite-mail.component'
+import { InviteMailComponent } from './invite-mail/invite-mail.component';
+import { StudentSettingComponent } from './student-setting/student-setting.component'
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { InviteMailComponent } from './invite-mail/invite-mail.component'
     AdminSettingComponent,
     SidenavComponent,
     HeaderComponent,
-    InviteMailComponent
+    InviteMailComponent,
+    StudentSettingComponent
   ],
   imports: [
     MatSidenavModule,
