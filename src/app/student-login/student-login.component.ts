@@ -9,6 +9,7 @@ import { ExamService } from '../exam.service';
   styleUrls: ['./student-login.component.scss']
 })
   
+
 export class StudentLoginComponent implements OnInit {
   isLogin: boolean = true;
 
@@ -34,13 +35,13 @@ onSubmitLogin() {
   // TODO: Use EventEmitter with form value
   console.log(this.studentLogin.value);
   this.examservice.sendLogout("student");
-  this.router.navigate(['/dashboard']);
+  this.router.navigate(['/student-dashboard']);
 }
   onSubmitRegistration() {
   // TODO: Use EventEmitter with form value
     console.log(this.studentRegistered.value);
     this.examservice.sendLogout("student");
-     this.router.navigate(['/dashboard']);
+     this.router.navigate(['/student-dashboard']);
 }
   register()
   {

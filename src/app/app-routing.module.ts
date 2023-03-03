@@ -17,16 +17,15 @@ import { InviteMailComponent } from './invite-mail/invite-mail.component'
 import { StudentSettingComponent } from './student-setting/student-setting.component'
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
 import { LoadingPageComponent } from './loading-page/loading-page.component'
-import { HeaderComponent } from './header/header.component'
 
 const routes: Routes = [
   //{ path: 'home', component: HomeComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'admin', component: AdminLoginComponent },
+  { path: 'admin-login', component: AdminLoginComponent },
   { path: 'help', component: HelpSupportComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactUsComponent },
-  { path: 'student', component: StudentLoginComponent },
+  { path: 'student-login', component: StudentLoginComponent },
   { path: 'instructions', component: InstructionComponent },
   { path: 'examination', component: ExaminationComponent },
   { path: 'result', component: ResultComponent },
