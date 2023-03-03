@@ -34,7 +34,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { InviteMailComponent } from './invite-mail/invite-mail.component';
 import { StudentSettingComponent } from './student-setting/student-setting.component';
-import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { LoadingPageComponent } from './loading-page/loading-page.component'
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
     HeaderComponent,
     InviteMailComponent,
     StudentSettingComponent,
-    StudentDashboardComponent
+    StudentDashboardComponent,
+    LoadingPageComponent
   ],
   imports: [
     MatSidenavModule,

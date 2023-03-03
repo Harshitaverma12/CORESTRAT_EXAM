@@ -16,11 +16,12 @@ import { SidenavComponent } from './sidenav/sidenav.component'
 import { InviteMailComponent } from './invite-mail/invite-mail.component'
 import { StudentSettingComponent } from './student-setting/student-setting.component'
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
+import { LoadingPageComponent } from './loading-page/loading-page.component'
 import { HeaderComponent } from './header/header.component'
 
 const routes: Routes = [
   //{ path: 'home', component: HomeComponent},
-  //{ path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'admin', component: AdminLoginComponent },
   { path: 'help', component: HelpSupportComponent },
   { path: 'home', component: HomeComponent },
@@ -36,6 +37,7 @@ const routes: Routes = [
   { path: 'invite-mail', component: InviteMailComponent },
   { path: 'student-setting', component: StudentSettingComponent },
   { path: 'student-dashboard', component: StudentDashboardComponent },
+  { path: 'loading-page', component: LoadingPageComponent },
   
 ];
 
