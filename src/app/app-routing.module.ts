@@ -15,6 +15,7 @@ import { AdminSettingComponent } from './admin-setting/admin-setting.component'
 import { SidenavComponent } from './sidenav/sidenav.component'
 import { InviteMailComponent } from './invite-mail/invite-mail.component'
 import { StudentSettingComponent } from './student-setting/student-setting.component'
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
 import { HeaderComponent } from './header/header.component'
 
 const routes: Routes = [
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'side-nav', component: SidenavComponent },
   { path: 'invite-mail', component: InviteMailComponent },
   { path: 'student-setting', component: StudentSettingComponent },
+  { path: 'student-dashboard', component: StudentDashboardComponent },
   
 ];
 

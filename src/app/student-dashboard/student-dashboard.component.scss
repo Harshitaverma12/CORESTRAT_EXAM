@@ -1,0 +1,74 @@
+.block1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.heading_div{
+    height: 6rem;
+    margin-top: 3rem;
+    background-color: #1e293b;
+    width: 100%;
+}
+
+.heading{
+    font-size: 2.0rem;
+    color: #ffffff;
+    margin-top: 1.5rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+    border: 3rem solid #ffffff;
+    border-radius: 1rem;
+    width: 96%;
+    float: left;
+    margin-left: 2rem;
+    margin-bottom: -20rem;
+}
+
+.in-card-1{
+    border: 1px solid white;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 10px !important;
+    width: 70%;
+    height: 20rem;
+}
+
+.in-card-2{
+    border: 1px solid white;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 10px !important;
+    width: 22%;
+    height: 20rem;
+    margin-left: 3rem;
+}
+
+.content{
+    width: 60% ;
+    height: 20rem;
+}
+
+.welcome{
+    font-size: 2rem;
+    margin-left: 3rem;
+}
+
+.name{
+    font-size: 2rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.image{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -18rem;
+}
+
+.demo-inline-calendar-card {
+    width: 300px;
+  }

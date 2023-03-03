@@ -7,10 +7,15 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AppComponent } from './app.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HelpSupportComponent } from './help-support/help-support.component';
@@ -28,7 +33,8 @@ import { AdminSettingComponent } from './admin-setting/admin-setting.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './header/header.component';
 import { InviteMailComponent } from './invite-mail/invite-mail.component';
-import { StudentSettingComponent } from './student-setting/student-setting.component'
+import { StudentSettingComponent } from './student-setting/student-setting.component';
+import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -47,7 +53,8 @@ import { StudentSettingComponent } from './student-setting/student-setting.compo
     SidenavComponent,
     HeaderComponent,
     InviteMailComponent,
-    StudentSettingComponent
+    StudentSettingComponent,
+    StudentDashboardComponent
   ],
   imports: [
     MatSidenavModule,
@@ -55,14 +62,19 @@ import { StudentSettingComponent } from './student-setting/student-setting.compo
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
+    MatInputModule,
     MatListModule,
     BrowserModule,
     AppRoutingModule,
     NgbCollapseModule,
     MatCheckboxModule,
+    MatDatepickerModule,
+    MatCardModule,
     MatButtonModule,
+    MatNativeDateModule,
     MatProgressSpinnerModule,
     FormsModule,
+    MatSelectModule,
     ReactiveFormsModule
   ],
   providers: [],

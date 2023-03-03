@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isEnabled(isEnabled: any) {
+    throw new Error('Method not implemented.');
+  }
   public onToggleSidenav = () => { 
 
   }
