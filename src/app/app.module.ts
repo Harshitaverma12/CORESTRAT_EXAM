@@ -7,6 +7,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AppComponent } from './app.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMenuModule } from '@angular/material/menu';
@@ -35,7 +36,8 @@ import { HeaderComponent } from './header/header.component';
 import { InviteMailComponent } from './invite-mail/invite-mail.component';
 import { StudentSettingComponent } from './student-setting/student-setting.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
-import { LoadingPageComponent } from './loading-page/loading-page.component'
+import { LoadingPageComponent } from './loading-page/loading-page.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component'
 
 @NgModule({
   declarations: [
@@ -56,12 +58,14 @@ import { LoadingPageComponent } from './loading-page/loading-page.component'
     InviteMailComponent,
     StudentSettingComponent,
     StudentDashboardComponent,
-    LoadingPageComponent
+    LoadingPageComponent,
+    AdminDashboardComponent
   ],
   imports: [
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
+    MatTableModule,
     MatIconModule,
     MatDividerModule,
     MatInputModule,

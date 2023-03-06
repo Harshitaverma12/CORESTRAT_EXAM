@@ -71,4 +71,45 @@
 
 .demo-inline-calendar-card {
     width: 300px;
+}
+
+
+@media (min-width: 414px) and (max-width: 819px) {
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0rem;
+    }
+    .in-card-1 {
+        margin-bottom: 20px;
+        width: 22rem;
+        margin-left: -3rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .in-card-1 .image {
+      display: none;
+    }
+
+    .in-card-2 {
+      width: 100%;
+      border: 1px solid white;
+      box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+      border-radius: 10px !important;
+      width: 22%;
+      height: 20rem;
+      margin-left: -18rem;
+    }
+    .demo-inline-calendar-card {
+      padding: 10px;
+    }
   }

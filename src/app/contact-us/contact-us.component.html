@@ -12,28 +12,30 @@
   </div>
 
   <div class="form">
-    <div class="d-flex flex-column mb-2">
-      <label class="label-name" for="name">Name: </label>
-      <input class="input-box" id="name" type="text" formControlName="name" />
-    </div>
+    <form [formGroup]="contact">
+      <div class="d-flex flex-column mb-2">
+        <label class="label-name" for="name">Name: </label>
+        <input class="input-box" id="name" type="text" formControlName="name" />
+      </div>
 
-    <div class="d-flex flex-column mb-2">
-      <label class="label" for="password">Email: </label>
-      <input
-        class="input-box"
-        id="email"
-        type="email"
-        formControlName="email"
-      />
-    </div>
+      <div class="d-flex flex-column mb-2">
+        <label class="label" for="password">Email: </label>
+        <input
+          class="input-box"
+          id="email"
+          type="email"
+          formControlName="email"
+        />
+      </div>
 
-    <div class="d-flex flex-column">
-      <label class="label" for="password">Message: </label>
-      <input class="input-box-msg" id="message" type="message" />
-    </div>
+      <div class="d-flex flex-column">
+        <label class="label" for="password">Message: </label>
+        <input class="input-box-msg" id="message" type="message" />
+      </div>
 
-    <div style="text-align: center !important">
-      <button class="getStarted" type="submit">Submit</button>
-    </div>
+      <div style="text-align: center !important">
+        <button class="getStarted" type="submit">Submit</button>
+      </div>
+    </form>
   </div>
 </div>

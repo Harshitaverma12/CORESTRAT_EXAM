@@ -17,6 +17,7 @@ import { InviteMailComponent } from './invite-mail/invite-mail.component'
 import { StudentSettingComponent } from './student-setting/student-setting.component'
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
 import { LoadingPageComponent } from './loading-page/loading-page.component'
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component'
 
 const routes: Routes = [
   //{ path: 'home', component: HomeComponent},
@@ -37,7 +38,7 @@ const routes: Routes = [
   { path: 'student-setting', component: StudentSettingComponent },
   { path: 'student-dashboard', component: StudentDashboardComponent },
   { path: 'loading-page', component: LoadingPageComponent },
-  
+  { path: 'admin-dashboard', component: AdminDashboardComponent },
 ];
 
 @NgModule({

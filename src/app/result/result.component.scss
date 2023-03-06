@@ -35,12 +35,23 @@
     display: none;
 }
 
+.login-button{
+    opacity: 1;
+    background: #1E293B;
+    border-radius: 10px;
+    color: white;
+    height: 2rem;
+    width: 8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 
 @media (min-width: 414px) and (max-width: 819px) {
     /* Tablet layout */
     .block{
         overflow-y: scroll;
-        height: 24rem;
+        height: 31rem;
     }
 
     .table-card{
@@ -55,6 +66,17 @@
         margin-left: 2rem;
         margin-right: 2rem;
         border: 2px solid;
+    }
+
+    .login-button{
+        opacity: 1;
+        background: #1E293B;
+        border-radius: 10px;
+        color: white;
+        height: 2rem;
+        width: 9rem;
+        font-size: 0.8rem;
+        font-weight: 500;
     }
     .card {
       width: 50%;
