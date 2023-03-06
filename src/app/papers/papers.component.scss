@@ -188,12 +188,6 @@ button {
     .card-container {
       display: flex;
       flex-wrap: wrap;
-      box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
-       margin-top: 2rem;
-       margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        border: 2px solid;
     }
     .card {
       width: 50%;
@@ -356,6 +350,18 @@ button {
             width: 8rem !important;
             font-size: 1rem !important;
     }
+
+    .mat-mdc-card {
+        position: relative;
+        border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px));
+        background-color: var(--mdc-elevated-card-container-color, transparent);
+        border-width: 0;
+        border-style: solid;
+        border-color: var(--mdc-elevated-card-container-color, transparent);
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 24rem;
+        box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
   }
 
   @media (min-width: 820px) and (max-width: 1180px) {
@@ -379,7 +385,6 @@ button {
         font-size: .5rem;
     }
     
-  }  
+  } 
+} 
 
-
-  

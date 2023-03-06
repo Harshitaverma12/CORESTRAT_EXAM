@@ -35,6 +35,17 @@
     display: none;
 }
 
+.login-button{
+    opacity: 1;
+    background: #1E293B;
+    border-radius: 10px;
+    color: white;
+    height: 2rem;
+    width: 6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 .getStarted {
     margin: 4%;
     background: #1E293B;
@@ -47,6 +58,9 @@
     text-align: center;
     margin-left: 67rem;
 }
+
+
+
 
 
 @media (min-width: 414px) and (max-width: 819px) {
@@ -108,6 +122,17 @@
         font-weight: 700;
         text-align: center;
         margin-left: 14rem;
+    }
+
+    .mat-mdc-card {
+        position: relative;
+        border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px));
+        background-color: var(--mdc-elevated-card-container-color, transparent);
+        border-width: 0;
+        border-style: solid;
+        border-color: var(--mdc-elevated-card-container-color, transparent);
+        margin: 1rem;
+        box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
     }
   }
 

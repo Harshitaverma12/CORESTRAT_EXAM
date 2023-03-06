@@ -23,8 +23,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./performance.component.scss']
 })
 
-
-export class PerformanceComponent implements OnInit {
+ export class PerformanceComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'max_marks', 'marks_obtained','marksinpercentage', 'marks_obtained', 'videolink', 'status'];
    dataSource = ELEMENT_DATA;
    selected = 'all';
@@ -49,3 +48,4 @@ export class PerformanceComponent implements OnInit {
      
  }
  }
+
