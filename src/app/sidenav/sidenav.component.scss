@@ -50,9 +50,9 @@
       }
     }
   }
-  .mat-subheader {
-    color: #818cf8;
-    font-size: 0.6rem;
+  .text {
+    color: #ffffff;
+    font-size: 1rem;
     font-weight: 100;
     letter-spacing: 1px;
   }
@@ -60,5 +60,9 @@
   .py-4 {
     padding-top: 1.5rem!important;
     padding-bottom: 0rem !important;
+}
+
+mat-drawer {
+  background: #0f172a;
 }
   
