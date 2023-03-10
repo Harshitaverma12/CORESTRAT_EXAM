@@ -18,10 +18,10 @@ import { StudentSettingComponent } from './student-setting/student-setting.compo
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component'
 import { LoadingPageComponent } from './loading-page/loading-page.component'
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component'
+import { HeaderComponent } from './header/header.component'
 
 const routes: Routes = [
-  //{ path: 'home', component: HomeComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'admin-login', component: AdminLoginComponent },
   { path: 'help', component: HelpSupportComponent },
   { path: 'home', component: HomeComponent },
@@ -29,6 +29,7 @@ const routes: Routes = [
   { path: 'student-login', component: StudentLoginComponent },
   { path: 'instructions', component: InstructionComponent },
   { path: 'examination', component: ExaminationComponent },
+  { path: 'header', component: HeaderComponent },
   { path: 'result', component: ResultComponent },
   { path: 'papers', component: PapersComponent },
   { path: 'performance', component: PerformanceComponent },

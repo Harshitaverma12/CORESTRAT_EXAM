@@ -19,3 +19,108 @@ body {
   color: #007bff;
   font-size: 30px;
 }
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #f7f7f7;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+button {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+.user {
+  font-size: 14px;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  &-icon {
+    height: 18px;
+    font-size: 16px;
+  }
+}
+
+.navbar-nav {
+  margin-left: 14rem;
+}
+
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+}
+
+.mat-divider {
+  border-top-width: 2px;
+  border-color: white;
+}
+
+.header-nav{
+  border: 0px;
+  background: #f7f7f7 !important;
+}
+
+.mat-list-item {
+  color: #000000 !important;
+  font-size: 1rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+  margin-top: 20px;
+  width: fit-content;
+  text-decoration: none;
+
+  &:hover {
+    color: #f2f5f7 !important;
+  }
+
+  ::ng-deep {
+    .mat-list-item-content {
+      border-radius: 5px;
+      margin: 0 8px;
+      width: 100% !important;
+
+      &:hover {
+        background: #2c3344 !important;
+        width: 100% !important;
+            padding: 5%;
+      }
+    }
+  }
+}
+
+.list-item-active {
+  // background: blue !important;
+  // border-radius: 0 2rem 2rem 0;
+  // &:hover {
+  //   background: blue;
+  // }
+
+  color: #f2f5f7 !important;
+
+  ::ng-deep {
+    .mat-list-item-content {
+      background: #2c3344 !important;
+      padding: 5%;
+
+      &:hover {
+        background: #2c3344 !important;
+        padding: 5%;
+      }
+    }
+  }
+}
+
+
+

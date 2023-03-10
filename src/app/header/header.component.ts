@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   isEnabled: boolean = false;
   LoggedIn: boolean = false;
   isAdmin: boolean = false;
+  isCollapsed = true;
   
   @Output() toggleSidebarForMe: EventEmitter<any> = new EventEmitter();
   constructor(private router: Router,private examservice: ExamService ) {}

@@ -27,6 +27,37 @@
 
         You are not allowed to open any tab or switch of the video. <br />
       </div>
+
+      <div class="checkbox">
+        <div>
+          <mat-checkbox
+            class="example-margin"
+            [color]="'primary'"
+            [(ngModel)]="terms"
+            (ngModelChange)="updateConditions()"
+            >I agree to all the terms and conditions</mat-checkbox
+          >
+        </div>
+        <div>
+          <mat-checkbox
+            class="example-margin"
+            [color]="'primary'"
+            [(ngModel)]="video"
+            (ngModelChange)="updateConditions()"
+            >Turn on the video</mat-checkbox
+          >
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <button
+        class="button button_save"
+        [disabled]="buttonDisabled"
+        (click)="startExam()"
+      >
+        Start
+      </button>
     </div>
   </div>
 </div>

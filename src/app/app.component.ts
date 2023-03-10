@@ -7,12 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Corestrat';
-  name = 'Angular';
   public isCollapsed = true;
+  title = 'admin-panel-layout';
+  sideBarOpen = false;
 
-  public call(){
-    console.log("hello")
+  sideBarToggler() {
+    this.sideBarOpen = !this.sideBarOpen;
   }
+
 }
 

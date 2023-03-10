@@ -1,6 +1,7 @@
-.block1{
+.block{
     display: flex;
     flex-direction: column;
+    margin-top: -3rem;
 }
 
 
@@ -18,6 +19,8 @@
 }
 
 .card-body{
+    height: 38rem;
+    background: #ffffff;
     margin-top: -1rem;
     border: 3rem solid #ffffff;
     border-radius: 1rem;

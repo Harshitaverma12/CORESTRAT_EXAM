@@ -1,6 +1,7 @@
-.block1{
+.block{
     display: flex;
     flex-direction: column;
+    margin-top: -3rem;
 }
 
 
@@ -23,30 +24,32 @@
     border-radius: 1rem;
     width: 96%;
     float: left;
+    background: #ffffff;
     margin-left: 2rem;
     margin-bottom: -20rem;
+    height: 44rem;
 }
 
 .input-box{
     background: #e6e6e6;
     border: none;
-    height: 6vh;
+    height: 11vh;
     border-radius: 12px;
     width: 40rem;
     margin-left: 30rem;
     margin-top: -2rem;
-    width: 50rem;
+    width: 41rem;
 }
 
 .input-box1{
     background: #e6e6e6;
     border: none;
-    height: 12vh;
+    height: 20vh;
     border-radius: 12px;
     width: 40rem;
     margin-left: 30rem;
     margin-top: -2rem;
-    width: 50rem;
+    width: 41rem;
 }
 
 .next-value{
@@ -68,7 +71,7 @@
     font-weight: 700;
     text-align: center;
     margin-left: 70rem;
-    margin-top: 20rem;
+    margin-top: 15rem;
 }
 
 @media (min-width: 414px) and (max-width: 819px){
@@ -178,6 +181,7 @@
         margin-top: -1rem;
         border: 3rem solid #ffffff;
         border-radius: 1rem;
+        background: white;
         width: 96%;
         float: left;
         margin-left: 1rem;

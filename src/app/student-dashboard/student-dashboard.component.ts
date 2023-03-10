@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { ExamService } from '../exam.service';
 import { HeaderComponent } from '../header/header.component';
 
@@ -8,17 +8,16 @@ import { HeaderComponent } from '../header/header.component';
   styleUrls: ['./student-dashboard.component.scss']
 })
 
-
 export class StudentDashboardComponent implements OnInit {
   sideBarOpen = true;
   selected: any = new Date();
-  constructor(private examservice: ExamService) { }
+  constructor(private header: HeaderComponent, private examservice: ExamService) { }
 
   ngOnInit(): void {
-    // console.log(this.header.isEnabled);
-    // this.header.isEnabled = true;
-    // console.log(this.header.isEnabled);
-    // // this.examservice.sendEventDetail(true);
+    console.log(this.header.isEnabled);
+    this.header.isEnabled = true;
+    console.log(this.header.isEnabled);
+    // this.examservice.sendEventDetail(true);
     this.examservice.sendactivateSideNav(true);
    
   }

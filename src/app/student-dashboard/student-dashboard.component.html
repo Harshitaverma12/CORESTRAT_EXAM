@@ -5,7 +5,7 @@
 </div>
 
 <div class="card-body">
-  <div class="in-card-1">
+  <div class="in-card-1 d-flex">
     <div class="content">
       <span class="welcome">Welcome Back,</span>
       <span class="name">Somya</span>
@@ -13,11 +13,17 @@
     <div class="image">
       <img src="./../../assets/dashboard.png" />
     </div>
+
+    <div class="calendar">
+      <mat-card class="demo-inline-calendar-card">
+        <mat-calendar [(selected)]="selected"></mat-calendar>
+      </mat-card>
+    </div>
   </div>
 
-  <div class="in-card-2">
+  <!-- <div class="in-card-2">
     <mat-card class="demo-inline-calendar-card">
       <mat-calendar [(selected)]="selected"></mat-calendar>
     </mat-card>
-  </div>
+  </div> -->
 </div>

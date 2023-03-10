@@ -1,6 +1,7 @@
-.block1{
+.block{
     display: flex;
     flex-direction: column;
+    margin-top: -3rem;
 }
 
 
@@ -21,20 +22,22 @@
     margin-top: -1rem;
     border: 3rem solid #ffffff;
     border-radius: 1rem;
+    height: 29rem;
     width: 96%;
     float: left;
     margin-left: 2rem;
     margin-bottom: -20rem;
+    background-color: #ffffff;
 }
 
 .input-box{
     background: #e6e6e6;
     border: none;
     border-radius: 12px;
-    width: 40rem;
+    width: 36rem;
     margin-top: -2rem;
     float: right;
-    margin-left: 39rem;
+    margin-left: 34rem;
     height: 3rem;
 }
 
@@ -42,9 +45,9 @@
     background: #e6e6e6;
         border: none;
         border-radius: 12px;
-        width: 40rem;
+        width: 36rem;
         margin-top: -2rem;
-        margin-left: 39rem;
+        margin-left: 34rem;
         height: 8rem;
 
 }
@@ -91,6 +94,7 @@
         float: left;
         margin-left: 1rem;
         margin-bottom: -20rem;
+        background: #ffffff;
     }
 
     .input-box{

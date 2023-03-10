@@ -1,32 +1,33 @@
 .block{
     display: flex;
     flex-direction: column;
+    margin-top: -3rem;
 }
 
 .image-header{
     width: 100%;
-    height: 28vh;
+    height: 40vh;
 }
 
 .userImg {
     border-radius: 100%;
     width: 8vw;
-    height: 16vh;
+    height: 29vh;
     background: white;
-    margin-top: -3rem;
+    margin-top: -4rem;
     margin-left: 2rem;
 }
 
 .btn-div{
     display: flex;
-    margin-top: -2rem;
-    margin-left: 76rem;
+    margin-top: -3rem;
+    margin-left: 69rem;
 }
 
 .button {
     border: none;
-    height: 5vh;
-    width: 6vw;
+    height: 10vh;
+    width: 7vw;
     border-radius: 11px;
 }
 
@@ -45,7 +46,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 10rem;
-    margin-top: -3rem;
+    margin-top: -2rem;
 }
 
 h4{
@@ -90,8 +91,8 @@ input{
 
 .changeImg{
     border-radius: 100%;
-    width: 4vw;
-    height: 8vh;
+    width: 5vw;
+    height: 14vh;
     background: white;
     margin-left: 25rem;
 }

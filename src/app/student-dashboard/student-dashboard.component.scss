@@ -1,6 +1,7 @@
-.block1{
+.block{
     display: flex;
     flex-direction: column;
+    margin-top: -3rem;
 }
 
 
@@ -18,8 +19,7 @@
 }
 
 .card-body{
-    display: flex;
-    flex-direction: row;
+    background: #ffffff;
     margin-top: -1rem;
     border: 3rem solid #ffffff;
     border-radius: 1rem;
@@ -63,10 +63,13 @@
     color: #1e293b;
 }
 
+.calendar{
+    margin-left: 19rem;
+}
+
 .image{
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -18rem;
 }
 
 .demo-inline-calendar-card {
@@ -82,10 +85,24 @@
       align-items: center;
       margin-top: 0rem;
     }
-    .in-card-1 {
+
+    .heading{
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: 1.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .in-card-1{
         margin-bottom: 20px;
-        width: 22rem;
-        margin-left: -3rem;
+        width: 18rem;
+        margin-left: -8.5rem;
+        height: 13rem;
+    }
+
+    .demo-inline-calendar-card{
+        width: 190px;
     }
 
     .content{
@@ -113,3 +130,53 @@
       padding: 10px;
     }
   }
+
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0rem;
+    }
+
+    .heading{
+        font-size: 2rem;
+        color: #ffffff;
+        padding-top: 1.5rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .in-card-1{
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: -1rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+    .in-card-1 .image {
+      
+    }
+
+    .in-card-2{
+        width: 100%;
+        border: 1px solid white;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        border-radius: 10px !important;
+        width: 43%;
+        height: 20rem;
+        margin-left: -25.5rem;
+    } 
+    .demo-inline-calendar-card {
+      padding: 10px;
+    }
+  }  
