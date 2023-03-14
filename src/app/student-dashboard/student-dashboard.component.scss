@@ -8,7 +8,7 @@
 .heading_div{
     height: 6rem;
     margin-top: 3rem;
-    background-color: #1e293b;
+    background-color: #0093fb;
     width: 100%;
 }
 
@@ -22,12 +22,21 @@
     margin-top: -1rem;
     border: 3rem solid #ffffff;
     border-radius: 1rem;
-    width: 96%;
+    width: 98%;
     float: left;
     background: #ffffff;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: -20rem;
     height: 44rem;
+}
+
+.demo-inline-calendar-card {
+    width: 300px;
+}
+
+.dashboard-text {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 10px !important;
 }
 
 .in-card-1{

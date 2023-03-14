@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<div class="card-body">
+<!-- <div class="card-body">
   <div class="in-card-1 d-flex">
     <div class="content">
       <span class="welcome">Welcome Back,</span>
@@ -21,9 +21,38 @@
     </div>
   </div>
 
-  <!-- <div class="in-card-2">
+   <div class="in-card-2">
     <mat-card class="demo-inline-calendar-card">
       <mat-calendar [(selected)]="selected"></mat-calendar>
     </mat-card>
   </div> -->
+
+<div class="container-fluid page">
+  <div
+    class="page__content shadow p-3 position-relative card-body"
+    style="background: white"
+  >
+    <div class="page__content-data position-absolute text-center"></div>
+    <div class="row col-12">
+      <div class="col-9 dashboard-text">
+        <div class="row col-12">
+          <div class="col-8">
+            <div class="m-4">
+              Welcome Back,
+              <span style="font-weight: 700; color: #1e293b">Somya</span>
+            </div>
+          </div>
+          <div class="col-4" style="margin-left: -2rem">
+            <img style="margin: 10%" src="./../../assets/dashboard.png" />
+          </div>
+        </div>
+      </div>
+      <div class="col-3" style="float: right">
+        <mat-card class="demo-inline-calendar-card">
+          <mat-calendar [(selected)]="selected"></mat-calendar>
+        </mat-card>
+      </div>
+    </div>
+    <!-- <p>Selected date: {{selected}}</p>  -->
+  </div>
 </div>

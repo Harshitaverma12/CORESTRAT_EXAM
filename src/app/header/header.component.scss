@@ -10,10 +10,13 @@ body {
 }
 .navbar .nav-item {
   padding: 10px 20px;
+  margin-top: 0rem;
+  padding-top: 0rem;
 }
 .navbar .nav-link {
   font-size: 20px;
   margin-left: 10px;
+  color: black;
 }
 .fa-bars {
   color: #007bff;
@@ -25,6 +28,14 @@ mat-toolbar {
   top: 0;
   z-index: 100;
   background: #f7f7f7;
+}
+
+li:hover {
+  background: #0093fb;
+}
+
+.nav-link:hover {
+  color: white;
 }
 
 ul {
@@ -52,7 +63,7 @@ button {
 }
 
 .navbar-nav {
-  margin-left: 14rem;
+  margin-left: 18rem;
 }
 
 :host {
@@ -65,11 +76,24 @@ button {
 .mat-divider {
   border-top-width: 2px;
   border-color: white;
+  background: #0093fb;
+  height: 3rem;
+  margin-top: 0.7rem;
+  padding-top: 0rem;
+  border-radius: 1rem;
 }
 
-.header-nav{
+.header-nav {
   border: 0px;
-  background: #f7f7f7 !important;
+  background: #f2f5f7 !important;
+  height: 4rem;
+}
+
+li {
+  height: 3rem;
+  margin-top: 0.7rem;
+  padding-top: 0rem;
+  border-radius: 1rem;
 }
 
 .mat-list-item {
@@ -94,18 +118,18 @@ button {
       &:hover {
         background: #2c3344 !important;
         width: 100% !important;
-            padding: 5%;
+        padding: 5%;
       }
     }
   }
 }
 
 .list-item-active {
-  // background: blue !important;
-  // border-radius: 0 2rem 2rem 0;
-  // &:hover {
-  //   background: blue;
-  // }
+  background: blue !important;
+  border-radius: 0 2rem 2rem 0;
+  &:hover {
+    background: blue;
+  }
 
   color: #f2f5f7 !important;
 
@@ -121,6 +145,3 @@ button {
     }
   }
 }
-
-
-

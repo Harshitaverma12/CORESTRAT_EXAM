@@ -1,143 +1,136 @@
-.block{
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
+}
+
+.heading_div {
+  height: 6rem;
+  margin-top: 3rem;
+  background-color: #0093fb;
+  width: 100%;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
+.card-body {
+  margin-top: -1rem;
+  border: 3rem solid #ffffff;
+  border-radius: 1rem;
+  width: 96%;
+  float: left;
+  margin-left: 2rem;
+  margin-bottom: -20rem;
+}
+
+.table {
+  box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
+}
+
+.card-box {
+  display: none;
+}
+
+.dwn-button {
+  opacity: 1;
+  background: #0093fb;
+  border-radius: 10px;
+  color: white;
+  height: 2rem;
+  width: 8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+}
+
+@media (min-width: 414px) and (max-width: 819px) {
+  /* Tablet layout */
+  .block {
+    overflow-y: scroll;
+    height: 31rem;
+  }
+
+  .table-card {
+    display: none;
+  }
+  .card-box {
     display: flex;
-    flex-direction: column;
-    margin-top: -3rem;
-}
+    flex-wrap: wrap;
+  }
 
+  .login-button {
+    opacity: 1;
+    background: #1e293b;
+    border-radius: 10px;
+    color: white;
+    height: 2rem;
+    width: 9rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .card {
+    width: 50%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
 
-.heading_div{
-    height: 6rem;
-    margin-top: 3rem;
-    background-color: #1e293b;
-    width: 100%;
-}
+  .card-body {
+    margin-top: -1rem;
+    display: none;
+  }
 
-.heading{
-    font-size: 2.0rem;
+  .heading {
+    font-size: 2rem;
     color: #ffffff;
-    margin-top: 1.5rem;
+    text-align: center;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
+
+  .mat-mdc-card {
+    position: relative;
+    border-radius: var(
+      --mdc-elevated-card-container-shape,
+      var(--mdc-shape-medium, 4px)
+    );
+    background-color: var(--mdc-elevated-card-container-color, transparent);
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--mdc-elevated-card-container-color, transparent);
+    margin: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 24rem;
+    box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
+  }
 }
 
-.card-body{
+@media (min-width: 820px) and (max-width: 1180px) {
+  /* Tablet layout */
+  .card-body {
     margin-top: -1rem;
     border: 3rem solid #ffffff;
     border-radius: 1rem;
     width: 96%;
     float: left;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-bottom: -20rem;
-}
-
-.table{
-    box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
-}
-
-.card-box{
-    display: none;
-}
-
-.login-button{
-    opacity: 1;
-    background: #1E293B;
-    border-radius: 10px;
-    color: white;
-    height: 2rem;
-    width: 8rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-
-
-
-
-@media (min-width: 414px) and (max-width: 819px) {
-    /* Tablet layout */
-    .block{
-        overflow-y: scroll;
-        height: 31rem;
-    }
-
-    .table-card{
-        display: none;
-    }
-    .card-box {
-      display: flex;
-      flex-wrap: wrap;
-      
-    }
-
-    .login-button{
-        opacity: 1;
-        background: #1E293B;
-        border-radius: 10px;
-        color: white;
-        height: 2rem;
-        width: 9rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-    .card {
-      width: 50%;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-    }
-    .card:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    .card-body{
-        margin-top: -1rem;
-        display: none;
-    }
-
-    .heading{
-        font-size: 2.0rem;
-    color: #ffffff;
-        text-align: center;
-        margin: auto;
-        padding-top: 1.5rem;
-    
-    }
-
-    .mat-mdc-card {
-        position: relative;
-        border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px));
-        background-color: var(--mdc-elevated-card-container-color, transparent);
-        border-width: 0;
-        border-style: solid;
-        border-color: var(--mdc-elevated-card-container-color, transparent);
-        margin: 1rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-        width: 24rem;
-        box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
-    }
   }
 
+  .table-card {
+    margin-left: -1rem;
+  }
 
-  @media (min-width: 820px) and (max-width: 1180px) {
-    /* Tablet layout */
-    .card-body{
-        margin-top: -1rem;
-        border: 3rem solid #ffffff;
-        border-radius: 1rem;
-        width: 96%;
-        float: left;
-        margin-left: 1rem;
-        margin-bottom: -20rem;
-    }
-
-    .table-card{
-        margin-left: -1rem;
-    }
-
-    .table td, .table th {
-        padding: 1.5rem;
-        font-size: .5rem;
-    }
-    
-  }  
-
-
-  
+  .table td,
+  .table th {
+    padding: 1.5rem;
+    font-size: 0.5rem;
+  }
+}

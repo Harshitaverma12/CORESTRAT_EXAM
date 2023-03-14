@@ -1,47 +1,219 @@
-.block{
-    display: flex;
-    flex-direction: column;
-    margin-top: -3rem;
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-top: -3rem;
 }
 
-
-.heading_div{
-    height: 6rem;
-    margin-top: 3rem;
-    background-color: #1e293b;
-    width: 100%;
+.heading_div {
+  height: 6rem;
+  margin-top: 3rem;
+  background-color: #0093fb;
+  width: 100%;
 }
 
-.heading{
-    font-size: 2.0rem;
-    color: #ffffff;
-    margin-top: 1.5rem;
+.heading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 1.5rem;
 }
 
-.card-body{
-    height: 30rem;
-    margin-top: -1rem;
-    border: 3rem solid #ffffff;
-    border-radius: 1rem;
-    width: 96%;
-    float: left;
-    margin-left: 2rem;
-    margin-bottom: -20rem;
-    background: #ffffff;
+.card-body {
+  height: 30rem;
+  margin-top: -1rem;
+  border: 3rem solid #ffffff;
+  border-radius: 1rem;
+  width: 96%;
+  float: left;
+  margin-left: 2rem;
+  margin-bottom: -20rem;
+  background: #ffffff;
 }
 
-.table{
-    box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
+.table {
+  box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
 }
 
-.card-container{
-    display: none;
+.card-container {
+  display: none;
 }
-
 
 .add_paper {
+  opacity: 1;
+  background: #0093fb;
+  border-radius: 10px;
+  color: white;
+  height: 3rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5rem;
+}
+
+button {
+  opacity: 1;
+  background: #0093fb;
+  border-radius: 10px;
+  color: white;
+  height: 2rem;
+  width: 6rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+}
+
+.button_div {
+  position: absolute;
+  left: 84%;
+}
+
+.modal_container {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  z-index: 7;
+}
+
+.modal_container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  padding: 10px 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  text-align: center;
+  z-index: 5;
+  position: absolute;
+  width: 42%;
+  height: 40%;
+  left: 26%;
+  top: 31%;
+  background: #7ed5f6;
+  border-radius: 15px;
+  color: white;
+  font-family: "Poppins";
+}
+
+.dialog {
+  position: absolute;
+  left: 30%;
+  height: 65vh;
+  width: 40vw;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.close {
+  float: right;
+}
+.dialog_header {
+  height: 3rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background: #1e293b;
+}
+.input-box {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid;
+}
+.question_box {
+  height: fit-content;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  font-size: 1.2rem;
+  min-height: 30vh !important;
+  max-height: 48vh !important;
+  height: auto;
+  overflow: auto;
+}
+
+.button1 {
+  opacity: 0.8;
+  margin: 10%;
+  background: #0093fb;
+  border-radius: 7px;
+  color: white;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button1:hover {
+  opacity: 1;
+}
+
+.grid_answers {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.Navigation_buttons {
+  display: flex;
+  column-gap: 4%;
+}
+
+.navigation_box {
+  height: 22vh !important;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  font-size: 1.5rem;
+}
+.input_box {
+  width: 90%;
+  background: #e6e6e670;
+  border: none;
+  height: 6vh;
+  border-radius: 5px;
+}
+.add_question {
+  height: 3rem !important;
+  width: 8rem !important;
+  font-size: 1rem !important;
+}
+
+@media (min-width: 414px) and (max-width: 819px) {
+  /* Tablet layout */
+  .block {
+    overflow-y: scroll;
+    height: 41rem;
+  }
+
+  .table-card {
+    display: none;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 50%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .card-body {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  .heading {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding-top: 1.5rem;
+  }
+
+  .add_paper {
     opacity: 1;
-    background: #1E293B;
+    background: #1e293b;
     border-radius: 10px;
     color: white;
     height: 3rem;
@@ -49,26 +221,26 @@
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 5rem;
-}
+  }
 
-button {
+  button {
     opacity: 1;
-    background: #1E293B;
+    background: #1e293b;
     border-radius: 10px;
     color: white;
     height: 2rem;
     width: 6rem;
     font-size: 0.8rem;
     font-weight: 500;
-}
+  }
 
-
-.button_div {
+  .button_div {
     position: absolute;
+    top: 85%;
     left: 84%;
-}
+  }
 
-.modal_container {
+  .modal_container {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
@@ -80,14 +252,14 @@ button {
     width: 100vw;
     pointer-events: none;
     z-index: 7;
-}
+  }
 
-.modal_container.show {
+  .modal_container.show {
     pointer-events: auto;
     opacity: 1;
-}
+  }
 
-.modal {
+  .modal {
     padding: 10px 10px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
     text-align: center;
@@ -97,34 +269,34 @@ button {
     height: 40%;
     left: 26%;
     top: 31%;
-    background: #7ED5F6;
+    background: #7ed5f6;
     border-radius: 15px;
     color: white;
-    font-family: 'Poppins';
-}
+    font-family: "Poppins";
+  }
 
-.dialog {
+  .dialog {
     position: absolute;
     left: 30%;
     height: 65vh;
     width: 40vw;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-}
-.close{
+  }
+  .close {
     float: right;
-}
-.dialog_header{
+  }
+  .dialog_header {
     height: 3rem;
     font-size: 1.2rem;
     color: #ffffff;
-    background: #1E293B;
-}
-.input-box{
+    background: #1e293b;
+  }
+  .input-box {
     width: 100%;
-        border: none;
-        border-bottom: 1px solid;
-}
-.question_box {
+    border: none;
+    border-bottom: 1px solid;
+  }
+  .question_box {
     height: fit-content;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     font-size: 1.2rem;
@@ -132,261 +304,87 @@ button {
     max-height: 48vh !important;
     height: auto;
     overflow: auto;
-}
+  }
 
-.button1 {
+  .button1 {
     opacity: 0.8;
     margin: 10%;
-    background: #1E293B;
+    background: #1e293b;
     border-radius: 7px;
     color: white;
     height: 3rem;
     width: 3rem;
     font-size: 1.2rem;
     font-weight: 700;
-}
+  }
 
-.button1:hover {
+  .button1:hover {
     opacity: 1;
-}
+  }
 
-.grid_answers {
+  .grid_answers {
     display: grid;
     grid-template-columns: auto auto;
-}
-.Navigation_buttons {
+  }
+  .Navigation_buttons {
     display: flex;
     column-gap: 4%;
-}
+  }
 
-.navigation_box {
+  .navigation_box {
     height: 22vh !important;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
     font-size: 1.5rem;
-}
-.input_box{
-        width: 90%;
-            background: #e6e6e670;
-            border: none;
-            height: 6vh;
-            border-radius: 5px;
-}
-.add_question{
+  }
+  .input_box {
+    width: 90%;
+    background: #e6e6e670;
+    border: none;
+    height: 6vh;
+    border-radius: 5px;
+  }
+  .add_question {
     height: 3rem !important;
-        width: 8rem !important;
-        font-size: 1rem !important;
-}
+    width: 8rem !important;
+    font-size: 1rem !important;
+  }
 
-@media (min-width: 414px) and (max-width: 819px) {
-    /* Tablet layout */
-    .block{
-        overflow-y: scroll;
-        height: 41rem;
-    }
-
-    .table-card{
-        display: none;
-    }
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .card {
-      width: 50%;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-    }
-    .card:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    .card-body{
-        margin-top: -1rem;
-        display: none;
-    }
-
-    .heading{
-        font-size: 2.0rem;
-    color: #ffffff;
-        text-align: center;
-        margin: auto;
-        padding-top: 1.5rem;
-    
-    }
-
-    .add_paper {
-        opacity: 1;
-        background: #1E293B;
-        border-radius: 10px;
-        color: white;
-        height: 3rem;
-        width: 9rem;
-        font-size: 1.2rem;
-        font-weight: 500;
-        margin-top: 5rem;
-    }
-
-    button {
-        opacity: 1;
-        background: #1E293B;
-        border-radius: 10px;
-        color: white;
-        height: 2rem;
-        width: 6rem;
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-    
-    
-    .button_div {
-        position: absolute;
-        top: 85%;
-        left: 84%;
-    }
-    
-    .modal_container {
-        background-color: rgba(0, 0, 0, 0.3);
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        height: 100vh;
-        width: 100vw;
-        pointer-events: none;
-        z-index: 7;
-    }
-    
-    .modal_container.show {
-        pointer-events: auto;
-        opacity: 1;
-    }
-    
-    .modal {
-        padding: 10px 10px;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
-        text-align: center;
-        z-index: 5;
-        position: absolute;
-        width: 42%;
-        height: 40%;
-        left: 26%;
-        top: 31%;
-        background: #7ED5F6;
-        border-radius: 15px;
-        color: white;
-        font-family: 'Poppins';
-    }
-    
-    .dialog {
-        position: absolute;
-        left: 30%;
-        height: 65vh;
-        width: 40vw;
-        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    }
-    .close{
-        float: right;
-    }
-    .dialog_header{
-        height: 3rem;
-        font-size: 1.2rem;
-        color: #ffffff;
-        background: #1E293B;
-    }
-    .input-box{
-        width: 100%;
-            border: none;
-            border-bottom: 1px solid;
-    }
-    .question_box {
-        height: fit-content;
-        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-        font-size: 1.2rem;
-        min-height: 30vh !important;
-        max-height: 48vh !important;
-        height: auto;
-        overflow: auto;
-    }
-    
-    .button1 {
-        opacity: 0.8;
-        margin: 10%;
-        background: #1E293B;
-        border-radius: 7px;
-        color: white;
-        height: 3rem;
-        width: 3rem;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    
-    .button1:hover {
-        opacity: 1;
-    }
-    
-    .grid_answers {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .Navigation_buttons {
-        display: flex;
-        column-gap: 4%;
-    }
-    
-    .navigation_box {
-        height: 22vh !important;
-        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-        font-size: 1.5rem;
-    }
-    .input_box{
-            width: 90%;
-                background: #e6e6e670;
-                border: none;
-                height: 6vh;
-                border-radius: 5px;
-    }
-    .add_question{
-        height: 3rem !important;
-            width: 8rem !important;
-            font-size: 1rem !important;
-    }
-
-    .mat-mdc-card {
-        position: relative;
-        border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px));
-        background-color: var(--mdc-elevated-card-container-color, transparent);
-        border-width: 0;
-        border-style: solid;
-        border-color: var(--mdc-elevated-card-container-color, transparent);
-        margin-left: 1rem;
-        margin-top: 1rem;
-        width: 24rem;
-        box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
+  .mat-mdc-card {
+    position: relative;
+    border-radius: var(
+      --mdc-elevated-card-container-shape,
+      var(--mdc-shape-medium, 4px)
+    );
+    background-color: var(--mdc-elevated-card-container-color, transparent);
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--mdc-elevated-card-container-color, transparent);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 24rem;
+    box-shadow: 5px 10px 18px rgb(0 0 0 / 20%);
   }
 
   @media (min-width: 820px) and (max-width: 1180px) {
     /* Tablet layout */
-    .card-body{
-        margin-top: -1rem;
-        border: 3rem solid #ffffff;
-        border-radius: 1rem;
-        width: 96%;
-        float: left;
-        margin-left: 1rem;
-        margin-bottom: -20rem;
+    .card-body {
+      margin-top: -1rem;
+      border: 3rem solid #ffffff;
+      border-radius: 1rem;
+      width: 96%;
+      float: left;
+      margin-left: 1rem;
+      margin-bottom: -20rem;
     }
 
-    .table-card{
-        margin-left: -1rem;
+    .table-card {
+      margin-left: -1rem;
     }
 
-    .table td, .table th {
-        padding: 1.5rem;
-        font-size: .5rem;
+    .table td,
+    .table th {
+      padding: 1.5rem;
+      font-size: 0.5rem;
     }
-    
-  } 
-} 
-
+  }
+}

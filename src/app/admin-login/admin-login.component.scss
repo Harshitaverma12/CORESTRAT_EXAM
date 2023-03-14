@@ -1,56 +1,71 @@
-.block{
-    display: flex;
-    justify-content: center;
+.block {
+  display: flex;
+  justify-content: center;
 }
 
-.box{
-    margin-top: 4rem;
-    width: 30rem;
-    height: 25rem;
-    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+.box {
+  margin-top: 4rem;
+  width: 30rem;
+  height: 25rem;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.title{
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 700;
+.title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .input-box {
-    border: none !important;
-    border-bottom: 1px solid #2c3344 !important;
-    width: 100%;
+  border: none !important;
+  border-bottom: 1px solid #2c3344 !important;
+  width: 100%;
 }
 
 .input-box input {
-    border: none !important;
-    border-bottom: 1px solid #2c3344 !important;
+  border: none !important;
+  border-bottom: 1px solid #2c3344 !important;
 }
 
-.login-button {
-    opacity: 0.8;
-    margin: 10%;
-    background: #1E293B;
-    border-radius: 10px;
-    color: white;
-    height: 3rem;
-    width: 10rem;
-    font-size: 1.2rem;
-    font-weight: 700;
+button {
+  opacity: 0.8;
+  margin: 10%;
+  background: #0093fb;
+  border-radius: 10px;
+  color: white;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
 }
 
-@media(max-width:480px){
-    .block{
-        margin: 1rem;
-        margin-top: 4rem;
-    }
+button:hover {
+  opacity: 1;
+}
 
-    .box{
-        margin-top: 0rem;
-        width: 30rem;
-        height: 22rem;
-        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    }
+button:disabled,
+button[disabled] {
+  border-radius: 10px;
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10%;
+  background-color: #cccccc;
+  color: #666666;
+}
 
+@media (max-width: 480px) {
+  .block {
+    margin: 1rem;
+    margin-top: 4rem;
+  }
 
+  .box {
+    margin-top: 0rem;
+    width: 30rem;
+    height: 22rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  }
 }
